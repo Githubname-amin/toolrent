@@ -2,11 +2,31 @@
     "pages": [
         "pages/index/index",
         "pages/logs/logs",
-        "pages/toLogin/toLogin"
+        "pages/toLogin/toLogin",
+        "pages/oldTile/oldTile"
     ],
     "window": {
         "navigationBarTextStyle": "black",
-        "navigationStyle": "custom"
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#f4de3b",
+        "navigationBarTitleText": "脚手架租赁2",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#aaa",
+        "selectedColor": "#ddc40b",
+        "backgroundColor": "#fff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "脚手架"
+            },
+            {
+                "pagePath": "pages/oldTile/oldTile",
+                "text": "古建配件"
+            }
+        ]
     },
     "style": "v2",
     "renderer": "skyline",
@@ -20,6 +40,7 @@
             "sdkVersionEnd": "15.255.255"
         }
     },
+    "component": true,
     "componentFramework": "glass-easel",
     "sitemapLocation": "sitemap.json",
     "lazyCodeLoading": "requiredComponents"

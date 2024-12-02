@@ -1,4 +1,4 @@
-// pages/toLogin/toLogin.js.js
+// pages/oldTile/oldTile.js
 Page({
 
   /**
