@@ -1,2 +1,9 @@
 <!--components/foot-bar/foot-bar.wxml-->
-<text>底部流程图</text>
+<view class="footBar">
+    <view wx:for="{{footMap}}" wx:key="index" class="footBarBox" bind:tap="handleFootbar" data-footIndex="{{item.index}}">
+        <image class="footBarImg" src="/img/{{item.imgSrc}}.png"></image>
+        <view>
+            {{item.message}}
+        </view>
+    </view>
+</view>

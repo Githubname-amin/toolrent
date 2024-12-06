@@ -20,5 +20,5 @@
         </view>
         <view hidden="{{activeIndex !=1}}">价格</view>
     </view>
-    <foot-bar></foot-bar>
+    <foot-bar class="footBar" bind:customEvent="changePageIndex"></foot-bar>
 </view>

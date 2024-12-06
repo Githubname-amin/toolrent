@@ -57,6 +57,11 @@ Page({
                 }
             })
         },
+        // 页面切换
+        changePageIndex: function (e) {
+            console.log('页面切换', e)
+            
+        }
 
 
     },
@@ -68,6 +73,6 @@ Page({
         })
     },
     onload: function () {
-       
+
     }
 })
