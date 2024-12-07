@@ -1,0 +1,40 @@
+/* components/rentBefore/rentBefore.wxss */
+.rentBeforeBox {
+    width: 100%;
+}
+
+.rentBeforeBoxHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1296db;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.headerText1 {
+    font-size: 20px;
+    color: #1296db;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.rentBeforeInformation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    margin: 0 10px;
+    height: 40px;
+}
+
+.rentBeforeInformationText{
+    font-size: 14px;
+}
+
+.rentBeforeInformationIcon {
+    color: #1296db;
+}

@@ -13,9 +13,10 @@
             </block>
         </view>
     </view>
-    <view>
-        <view hidden="{{activeIndex !=0}}">
-            需求
+    <view class="insidePage">
+        <view class="rentPage" hidden="{{activeIndex !=0}}">
+            <rentBefore></rentBefore>
+
             <needs></needs>
         </view>
         <view hidden="{{activeIndex !=1}}">价格</view>

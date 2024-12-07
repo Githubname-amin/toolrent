@@ -1,0 +1,27 @@
+<!--components/rentBefore/rentBefore.wxml-->
+<view class="rentBeforeBox">
+    <bubble>
+        <view class="rentBeforeBoxHeader">
+            <view class="headerText1">下单需知</view>
+            <view class="headerText2">咨询客服></view>
+        </view>
+        <view>
+            <view class="rentBeforeInformation">
+                <view class="rentBeforeInformationText"> 为什么需要交押金？租金怎么算？</view>
+                <view class="rentBeforeInformationIcon">>></view>
+            </view>
+            <view class="rentBeforeInformation">
+                <view class="rentBeforeInformationText"> 直接购买脚手架请联系老板</view>
+                <view class="rentBeforeInformationIcon">>></view>
+            </view>
+            <view class="rentBeforeInformation">
+                <view class="rentBeforeInformationText"> 租赁超15套联系老板获取优惠报价</view>
+                <view class="rentBeforeInformationIcon">>></view>
+            </view>
+            <view class="rentBeforeInformation">
+                <view class="rentBeforeInformationText"> 不确定所需套数，联系老板帮忙参考</view>
+                <view class="rentBeforeInformationIcon">>></view>
+            </view>
+        </view>
+    </bubble>
+</view>
