@@ -19,7 +19,7 @@ Component({
                 routerStr: ''
             },
             {
-                message: '套餐',
+                message: '选择服务',
                 index: 1,
                 imgSrc: 'talkPrice',
                 routerStr: ''

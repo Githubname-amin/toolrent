@@ -53,6 +53,10 @@
 /* 租赁页面 */
 .rentPage {}
 
+.choiseHeaderOutsidesText{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
 
 
 /* 底部 */

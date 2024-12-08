@@ -1,1 +1,58 @@
 /* components/needs/needs.wxss */
+.needsBubble {
+    height: 260px;
+}
+
+.rentTimeLine {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1296db;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.timelineText1 {
+    font-size: 20px;
+    color: #1296db;
+}
+
+.timelineText2 {
+    font-size: 14px;
+    color: #444;
+}
+
+.needsDetail {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.choiseItem {
+    border: 1px solid #444;
+    color: #444;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 0 5px;
+    margin-bottom: 15px;
+}
+
+.choiseItemTime {
+    font-size: 14px;
+}
+
+.choiseDrop {
+    margin-left: 20px;
+    color: #1296db;
+}
+
+.active{
+    border: 1px solid red;
+    color: red;
+}

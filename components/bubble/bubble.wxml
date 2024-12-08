@@ -1,7 +1,4 @@
 <!--components/bubble/bubble.wxml-->
 <view class="bubble">
-    <view>
-
-    </view>
     <slot></slot>
 </view>

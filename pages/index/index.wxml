@@ -16,7 +16,8 @@
     <view class="insidePage">
         <view class="rentPage" hidden="{{activeIndex !=0}}">
             <rentBefore bind:changeIndexInsidePage="changeIndexInsidePage" bind:changeBossPopup="changeBossPopup"></rentBefore>
-            <needs></needs>
+            <view class="choiseHeaderOutsidesText">> 选择服务</view>
+            <needs bind:changeBossPopup="changeBossPopup"></needs>
         </view>
         <view hidden="{{activeIndex !=1}}" class="pricePage">价格</view>
     </view>

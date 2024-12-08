@@ -1,2 +1,27 @@
 <!--components/needs/needs.wxml-->
-<text>components/needs/needs.wxml</text>
+<view>
+    <bubble isShowHeader="true">
+        <view class="needsBubble">
+            <view class="rentTimeLine">
+                <view class="timelineText1">租赁时长</view>
+                <view class="timelineText2">时间约长越优惠哦~</view>
+            </view>
+            <view class="needsDetail">
+                <view class="needsChoise">
+                    <view>
+                        <view class="choiseItem {{actionItem=='choiseItem1'?'active':''}}" data-choiseitemindex="1" bind:tap="choiseItem">15天内<text class="choiseItemTime">(3天起租；5元/套.天)</text></view>
+                    </view>
+                    <view>
+                        <view class="choiseItem {{actionItem=='choiseItem2'?'active':''}}" data-choiseitemindex="2" bind:tap="choiseItem">16-30天<text class="choiseItemTime">(3元/套.天)</text></view>
+                    </view>
+                    <view>
+                        <view class="choiseItem {{actionItem=='choiseItem3'?'active':''}}" data-choiseitemindex="3" bind:tap="choiseItem">31-60天<text class="choiseItemTime">(2元/套.天)</text></view>
+                    </view>
+                </view>
+                <view>
+                    <view class="choiseItem" bind:tap="choiseBoss"> 更长时间，点击联系老板得到更低报价 <text class="choiseDrop">>></text></view>
+                </view>
+            </view>
+        </view>
+    </bubble>
+</view>
