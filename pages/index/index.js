@@ -14,7 +14,9 @@ Page({
         // ------------------
         activeIndex: 0,
         tabs: ["选择租赁需求", "详情与价格"],
-        bossPopupFlag: false
+        bossPopupFlag: false,
+        // 选择的商品
+        choiceGoods: [],
     },
     methods: {
         // 事件处理函数
@@ -95,6 +97,13 @@ Page({
             })
         }
         // 遗留具体定位没有做
+    },
+    // 记录选择的商品
+    changeChoiceGoods: function (e) {
+        // 新增某种的数量、减少数量  type,data
+        const nowChild = this.selectComponent('#goodsChoice');
+        const nowNumber = nowChild.getChoiceNumber();
+        console.log('查看商品', nowChild, nowNumber);
     },
     onload: function () {},
 })

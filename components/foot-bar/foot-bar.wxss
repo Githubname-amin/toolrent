@@ -1,10 +1,17 @@
 /* components/foot-bar/foot-bar.wxss */
+.footBarAll {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .footBar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,4 +47,20 @@
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid #1296db;
+}
+
+.footPayBox {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.footPayText{
+    font-size: 18px;
+}
+
+.footPayBtn{
+    height: 40px;
 }

@@ -42,7 +42,8 @@ Component({
                 imgSrc: 'rule',
                 routerStr: ''
             }
-        ]
+        ],
+        payBtnFlag: true
     },
 
     /**
@@ -52,7 +53,7 @@ Component({
         handleFootbar: function (e) {
             console.log('当前事件', e.currentTarget.dataset)
             const index = e.currentTarget.dataset.footIndex;
-            
+
         }
     }
 })

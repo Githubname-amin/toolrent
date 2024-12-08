@@ -7,19 +7,19 @@
                 <view class="timelineText2">时间约长越优惠哦~</view>
             </view>
             <view class="needsDetail">
-                <view class="needsChoise">
+                <view class="needschoice">
                     <view>
-                        <view class="choiseItem {{actionItem=='choiseItem1'?'active':''}}" data-choiseitemindex="1" bind:tap="choiseItem">15天内<text class="choiseItemTime">(3天起租；5元/套.天)</text></view>
+                        <view class="choiceItem {{actionItem=='choiceItem1'?'active':''}}" data-choiceitemindex="1" bind:tap="choiceItem">15天内<text class="choiceItemTime">(3天起租；5元/套.天)</text></view>
                     </view>
                     <view>
-                        <view class="choiseItem {{actionItem=='choiseItem2'?'active':''}}" data-choiseitemindex="2" bind:tap="choiseItem">16-30天<text class="choiseItemTime">(3元/套.天)</text></view>
+                        <view class="choiceItem {{actionItem=='choiceItem2'?'active':''}}" data-choiceitemindex="2" bind:tap="choiceItem">16-30天<text class="choiceItemTime">(3元/套.天)</text></view>
                     </view>
                     <view>
-                        <view class="choiseItem {{actionItem=='choiseItem3'?'active':''}}" data-choiseitemindex="3" bind:tap="choiseItem">31-60天<text class="choiseItemTime">(2元/套.天)</text></view>
+                        <view class="choiceItem {{actionItem=='choiceItem3'?'active':''}}" data-choiceitemindex="3" bind:tap="choiceItem">31-60天<text class="choiceItemTime">(2元/套.天)</text></view>
                     </view>
                 </view>
                 <view>
-                    <view class="choiseItem" bind:tap="choiseBoss"> 更长时间，点击联系老板得到更低报价 <text class="choiseDrop">>></text></view>
+                    <view class="choiceItem" bind:tap="choiceBoss"> 更长时间，点击联系老板得到更低报价 <text class="choiceDrop">>></text></view>
                 </view>
             </view>
         </view>

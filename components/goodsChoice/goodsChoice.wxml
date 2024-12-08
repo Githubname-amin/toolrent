@@ -1,0 +1,13 @@
+<!--components/goodsChoice/goodsChoice.wxml-->
+<view>
+    <bubble>
+        <view>
+            <view class="goodsChoiceDetail">
+                脚手架选择
+            </view>
+            <view class="goodsChoiceBox" wx:for="{{goodsDetail}}" wx:key="index">
+                <goodsItem itemDetail="{{item}}" id="goodsItem{{index}}"></goodsItem>
+            </view>
+        </view>
+    </bubble>
+</view>

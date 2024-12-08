@@ -6,6 +6,7 @@
         "bossPopup": "/components/bossPopup/bossPopup",
         "rentBefore": "/components/rentBefore/rentBefore",
         "bubble": "/components/bubble/bubble",
+        "goodsChoice": "/components/goodsChoice/goodsChoice",
         "van-popup": "@vant/weapp/popup/index"
     }
 }

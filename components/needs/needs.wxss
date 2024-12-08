@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-.choiseItem {
+.choiceItem {
     border: 1px solid #444;
     color: #444;
     height: 30px;
@@ -43,11 +43,11 @@
     margin-bottom: 15px;
 }
 
-.choiseItemTime {
+.choiceItemTime {
     font-size: 14px;
 }
 
-.choiseDrop {
+.choiceDrop {
     margin-left: 20px;
     color: #1296db;
 }

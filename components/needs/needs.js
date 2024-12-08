@@ -19,15 +19,15 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        choiseItem: function (e) {
-            const nowChioseItem = Number(e.currentTarget.dataset.choiseitemindex)
+        choiceItem: function (e) {
+            const nowChioseItem = Number(e.currentTarget.dataset.choiceitemindex)
             if (nowChioseItem) {
                 this.setData({
-                    actionItem: `choiseItem${nowChioseItem}`
+                    actionItem: `choiceItem${nowChioseItem}`
                 })
             }
         },
-        choiseBoss: function (e) {
+        choiceBoss: function (e) {
             this.triggerEvent('changeBossPopup', {
                 message: true
             })

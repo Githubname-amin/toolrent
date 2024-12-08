@@ -1,0 +1,90 @@
+/* components/goodsItem/goodsItem.wxss */
+.goodsItemBox {
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.goodsItemBoxLeft {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.goodsItemBoxRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemHeader {
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.itemDetail {
+    flex: 1;
+    font-size: 12px;
+    width: 80%;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.itemFoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left1 {
+    color: #1296db;
+    border: 1px solid #1296db;
+    font-size: 14px;
+}
+
+.left2 {
+    color: #1296db;
+}
+
+.footRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.steptBox {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.steptBoxcenter {
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 2px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}

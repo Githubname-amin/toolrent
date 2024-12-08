@@ -1,0 +1,30 @@
+<!--components/goodsItem/goodsItem.wxml-->
+<view class="goodsItemBox">
+    <image class="goodsItemBoxLeft" src="{{itemDetail.itemImgSrc}}" mode="" />
+    <view class="goodsItemBoxRight">
+        <view class="itemHeader">
+            {{itemDetail.itemName}}
+        </view>
+        <view class="itemDetail">
+            {{itemDetail.itemDetailMsg}}
+        </view>
+        <view class="itemFoot">
+            <view class="footLeft">
+                <view class="left1">
+                    押金
+                </view>
+                <view class="left2">
+                    ￥{{itemDetail.itemYajinDetail}}
+                </view>
+            </view>
+            <view class="footRight">
+                <view class="steptBox" bind:tap="numberDown"> - </view>
+                <view class="steptBoxcenter">
+                    <!-- <input class="weui-input" type="number" value="{{nowNumber}}" /> -->
+                    {{nowNumber}}
+                </view>
+                <view class="steptBox" bind:tap="numberAdd"> + </view>
+            </view>
+        </view>
+    </view>
+</view>

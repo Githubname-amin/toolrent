@@ -1,9 +1,15 @@
 <!--components/foot-bar/foot-bar.wxml-->
-<view class="footBar">
-    <view wx:for="{{footMap}}" wx:key="index" class="footBarBox" bind:tap="handleFootbar" data-footIndex="{{item.index}}">
-        <image class="footBarImg" src="/img/{{item.imgSrc}}.png"></image>
-        <view>
-            {{item.message}}
+<view class="footBarAll">
+    <view class="footBar">
+        <view wx:for="{{footMap}}" wx:key="index" class="footBarBox" bind:tap="handleFootbar" data-footIndex="{{item.index}}">
+            <image class="footBarImg" src="/img/{{item.imgSrc}}.png"></image>
+            <view>
+                {{item.message}}
+            </view>
         </view>
+    </view>
+    <view class="footPayBox">
+        <view class="footPayText">请选择一个产品或者服务</view>
+        <van-button disabled="{{payBtnFlag}}" color="#1296db" round type="info">立即租赁</van-button>
     </view>
 </view>

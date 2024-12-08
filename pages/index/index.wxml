@@ -15,9 +15,15 @@
     </view>
     <view class="insidePage">
         <view class="rentPage" hidden="{{activeIndex !=0}}">
-            <rentBefore bind:changeIndexInsidePage="changeIndexInsidePage" bind:changeBossPopup="changeBossPopup"></rentBefore>
-            <view class="choiseHeaderOutsidesText">> 选择服务</view>
-            <needs bind:changeBossPopup="changeBossPopup"></needs>
+            <!-- <scroll-view scroll-y="true" style="height: 300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}"> -->
+
+            <scroll-view scroll-y="true" style="height: 1100rpx;">
+                <goodsChoice id="goodsChoice" bind:changeChoiceGoods="changeChoiceGoods"></goodsChoice>
+                <view bind:tap="changeChoiceGoods">测试按钮</view>
+                <rentBefore bind:changeIndexInsidePage="changeIndexInsidePage" bind:changeBossPopup="changeBossPopup"></rentBefore>
+                <view class="choiceHeaderOutsidesText">> 选择服务</view>
+                <needs bind:changeBossPopup="changeBossPopup"></needs>
+            </scroll-view>
         </view>
         <view hidden="{{activeIndex !=1}}" class="pricePage">价格</view>
     </view>

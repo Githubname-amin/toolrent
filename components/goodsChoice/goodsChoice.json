@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "bubble": "/components/bubble/bubble",
+    "goodsItem": "/components/goodsItem/goodsItem"
+  }
+}
