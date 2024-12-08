@@ -3,7 +3,9 @@
         "navigation-bar": "/components/navigation-bar/navigation-bar",
         "foot-bar": "/components/foot-bar/foot-bar",
         "needs": "/components/needs/needs",
+        "bossPopup": "/components/bossPopup/bossPopup",
         "rentBefore": "/components/rentBefore/rentBefore",
-        "bubble": "/components/bubble/bubble"
+        "bubble": "/components/bubble/bubble",
+        "van-popup": "@vant/weapp/popup/index"
     }
 }

@@ -1,0 +1,26 @@
+.bossPopup {
+    padding: 10px 20px;
+}
+
+.bossPopupHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerText{
+    font-size: 22px;
+}
+
+.bossWeixin{
+    width: 200px;
+    height: 200px;
+    margin: 25px 0;
+}
+
+.headerOtherText{
+    font-size: 14px;
+    color: #444444;
+}

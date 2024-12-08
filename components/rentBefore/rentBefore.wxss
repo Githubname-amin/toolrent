@@ -26,12 +26,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #eee;
     margin: 0 10px;
     height: 40px;
 }
 
-.rentBeforeInformationText{
+.rentBeforeInformation:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.rentBeforeInformationText {
     font-size: 14px;
 }
 

@@ -14,6 +14,7 @@ Page({
         // ------------------
         activeIndex: 0,
         tabs: ["选择租赁需求", "详情与价格"],
+        bossPopupFlag: false
     },
     methods: {
         // 事件处理函数
@@ -57,22 +58,43 @@ Page({
                 }
             })
         },
+        // ----------------
         // 页面切换
         changePageIndex: function (e) {
             console.log('页面切换', e)
-            
-        }
+        },
 
 
     },
     // ----------------------
+    onClosePopup: function () {
+        this.changeBossPopup(false)
+    },
+    changeBossPopup: function (nowFlag) {
+        this.setData({
+            bossPopupFlag: nowFlag.detail
+        })
+    },
     // 选择展示
     tabClick: function (e) {
         this.setData({
             activeIndex: e.currentTarget.id
         })
     },
-    onload: function () {
-
-    }
+    // 两种选择之间的相互跳转
+    // 下方的小tab也会使用这个
+    changeIndexInsidePage: function (e) {
+        const pageName = e.detail.page
+        if (pageName == 'pricePage') {
+            this.setData({
+                activeIndex: 1
+            })
+        } else if (pageName == 'rentPage') {
+            this.setData({
+                activeIndex: 0
+            })
+        }
+        // 遗留具体定位没有做
+    },
+    onload: function () {},
 })

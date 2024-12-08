@@ -1,0 +1,18 @@
+<!--components/bossPopup/bossPopup.wxml-->
+<view class="bossPopup">
+    <bubble>
+        <view class="bossPopupHeader">
+            <view class="headerText">
+                长按识别二维码，直接加老板微信
+            </view>
+            <image class="bossWeixin" src="/img/bossWeixin.png" mode="" show-menu-by-longpress="{{true}}" />
+            <view class="headerOtherText">
+                <text>- 建筑类工具出租</text>
+                <text>- 建筑类配件销售</text>
+                <text>- 当地人员调度</text>
+                <text>更多服务等着您</text>
+            </view>
+        </view>
+    </bubble>
+
+</view>

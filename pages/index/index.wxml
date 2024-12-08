@@ -15,11 +15,14 @@
     </view>
     <view class="insidePage">
         <view class="rentPage" hidden="{{activeIndex !=0}}">
-            <rentBefore></rentBefore>
-
+            <rentBefore bind:changeIndexInsidePage="changeIndexInsidePage" bind:changeBossPopup="changeBossPopup"></rentBefore>
             <needs></needs>
         </view>
-        <view hidden="{{activeIndex !=1}}">价格</view>
+        <view hidden="{{activeIndex !=1}}" class="pricePage">价格</view>
     </view>
     <foot-bar class="footBar" bind:customEvent="changePageIndex"></foot-bar>
+    <!-- <bossPopup isShow="{{bossPopupFlag}}"></bossPopup> -->
+    <van-popup show="{{bossPopupFlag}}" round custom-style="height:45%" bind:close="onClosePopup" position="bottom">
+        <bossPopup></bossPopup>
+    </van-popup>
 </view>

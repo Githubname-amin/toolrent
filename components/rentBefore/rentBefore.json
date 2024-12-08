@@ -1,6 +1,7 @@
 {
     "component": true,
     "usingComponents": {
-        "bubble": "/components/bubble/bubble"
+        "bubble": "/components/bubble/bubble",
+        "bossPopup": "/components/bossPopup/bossPopup"
     }
 }
